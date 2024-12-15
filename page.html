@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Statistiques League of Legends</title>
+    <link rel="stylesheet" href="page.css"> 
+    <script src="/socket.io/socket.io.js"></script> 
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recherche de Statistiques</h1>
+
+      <!-- Formulaire de recherche -->
+      <input id="pseudo" type="text" placeholder="Entrez votre pseudo" />
+
+      <input id="tag" type="text" placeholder="Entrez votre tag" />
+
+      <button type="button" id="sendButton">Envoyer</button>
+    </div>
+
+    <!-- Conteneur des statistiques -->
+    <div class ="boxStats"> 
+      <div id="statsGlobales">
+        <h2>Statistiques générales</h2>
+        <p class ="statistiquesPlaceholder">Les statistiques seront affichées ici.</p>
+      </div>
+
+      <!-- Conteneur des maitrises -->
+      <div id="statsMaitrises">
+        <h2>Statistiques des maitrises</h2>
+        <p class = "statistiquesPlaceholder">Les statistiques seront affichées ici.</p>
+      </div>
+    </div>
+   
+    <div>
+      <h2> Votre niveau sur le jeu</h2>
+      <p> Comparé à un joueur moyen de votre rank </p>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
